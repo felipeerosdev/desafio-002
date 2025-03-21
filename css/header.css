@@ -1,0 +1,41 @@
+header{
+  padding-bottom: 58px;
+}
+header div.header-top p{
+  display: block;
+  padding: 12px 0;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: var(--grey);
+}
+header div.hero-banner{
+  background-image: url(/assets/img/image-jordan-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  padding-top: 92px;
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  gap:40px
+}
+div.hero-logo{
+  display: flex;
+  gap: 8px;
+  /* padding-bottom: 40px; */
+}
+div.hero-logo p{
+  color: var(--white);
+  font-size: 18px;
+}
+div.hero-content h1{
+  font-size: 24px;
+  padding-bottom: 12px;
+  color: var(--white);
+  font-weight: 500;
+}
+div.hero-content p{
+  color: var(--white);
+  line-height: 1.25;
+}
