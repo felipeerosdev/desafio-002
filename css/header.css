@@ -1,5 +1,5 @@
 header{
-  padding-bottom: 58px;
+  padding-bottom: 56px;
 }
 header div.header-top p{
   display: block;
@@ -8,6 +8,7 @@ header div.header-top p{
   text-align: center;
   border: 1px solid black;
   background-color: var(--grey);
+  color: var(--dark);
 }
 header div.hero-banner{
   background-image: url(/assets/img/image-jordan-mobile.png);
@@ -23,7 +24,6 @@ header div.hero-banner{
 div.hero-logo{
   display: flex;
   gap: 8px;
-  /* padding-bottom: 40px; */
 }
 div.hero-logo p{
   color: var(--white);
@@ -38,4 +38,18 @@ div.hero-content h1{
 div.hero-content p{
   color: var(--white);
   line-height: 1.25;
+}
+@media(min-width:48rem){/*768px*/
+  header div.header-top p{
+    font-size: 16px;
+  }
+  header div.hero-banner{
+    background-image: url(/assets/img/image-jordan-tablet.png);
+    padding-top: 100px;
+  padding-bottom: 100px;
+  }
+  div.hero-content p{
+    font-size: 18px;
+    width: 400px;
+  }
 }
