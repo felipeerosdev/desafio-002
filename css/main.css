@@ -14,7 +14,7 @@ body{
 }
 main section div.content-section h2{
   font-size: 20px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   text-align: center;
 }
 main section div.content-section p{
@@ -22,7 +22,10 @@ main section div.content-section p{
   text-align: center;
   line-height: 1.4;
 }
-main section div.card{
+div.cards-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding: 40px 0;
 }
 main section div.card-img{
@@ -35,18 +38,47 @@ main section div.card-img{
   margin: 0 auto;
 }
 main section div.card h3{
-  padding-top: 24px;
+  margin-top: 24px;
   font-size: 16px;
   font-weight: 500;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 main section div.card h4{
   color: var(--brand-color);
   font-size: 16px;
   font-weight: 500;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 main section div.card p{
   font-size: 20px;
   font-weight: 500;
+}
+@media(min-width:48rem){/*768px*/
+  main section div.content-section h2{
+    font-size: 24px;
+  }
+  main section div.content-section p{
+    font-size: 16px;
+    width: 550px;
+    margin: 0 auto;
+  }
+  div.cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,326px);
+    gap: 40px 32px;
+  }
+  main section div.card{
+    width: 336px;
+    height: 326px;
+  }
+  main section div.card-img{
+    width: 100%;
+  }
+  main section div.card h3{
+    font-size: 18px;
+  }
+  main section div.card h4{
+    font-size: 16px;
+  }
 }
