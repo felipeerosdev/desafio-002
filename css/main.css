@@ -2,5 +2,51 @@ body{
   font-family: "archivo",sans-serif;
 }
 .container{
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 1250px;
+  width: 100%;
   padding: 0 32px;
+}
+main section div.content-section h2{
+  font-size: 20px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+main section div.content-section p{
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.4;
+}
+main section div.card{
+  padding: 40px 0;
+}
+main section div.card-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey);
+  width: 320px;
+  height: 200px;
+  margin: 0 auto;
+}
+main section div.card h3{
+  padding-top: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+main section div.card h4{
+  color: var(--brand-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 24px;
+}
+main section div.card p{
+  font-size: 20px;
+  font-weight: 500;
 }

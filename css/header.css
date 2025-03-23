@@ -6,8 +6,9 @@ header div.header-top p{
   padding: 12px 0;
   font-size: 14px;
   text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-color: var(--grey);
+  color: var(--dark);
 }
 header div.hero-banner{
   background-image: url(/assets/img/image-jordan-mobile.png);
@@ -20,14 +21,14 @@ header div.hero-banner{
   flex-direction: column;
   gap:40px
 }
-div.hero-logo{
-  display: flex;
-  gap: 8px;
-  /* padding-bottom: 40px; */
-}
-div.hero-logo p{
+div.hero-content p:nth-child(1){
   color: var(--white);
   font-size: 18px;
+  padding-bottom: 40px;
+}
+div.hero-content>p{
+  display: flex;
+  gap: 8px;
 }
 div.hero-content h1{
   font-size: 24px;
@@ -38,4 +39,47 @@ div.hero-content h1{
 div.hero-content p{
   color: var(--white);
   line-height: 1.25;
+}
+@media(min-width:48rem){/*768px*/
+  header div.header-top p{
+    font-size: 16px;
+  }
+  header div.hero-banner{
+    background-image: url(/assets/img/image-jordan-tablet.png);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  div.hero-content p{
+    font-size: 18px;
+    width: 400px;
+  }
+}
+@media(min-width:64rem){/*1024px*/
+  header div.header-top p{
+    font-size: 24px;
+    padding: 20px 0;
+  }
+  header div.hero-banner{
+    background-image: url(/assets/img/image-jordan-desktop.png);
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+  div.hero-content p:nth-child(1){
+    font-size: 24px;
+  }
+  div.hero-content>p{
+    align-items: center;
+  }
+  div.hero-content p img{
+    width: 48px;
+    height: 48px; 
+  }
+  div.hero-content h1{
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  div.hero-content p{
+    font-size: 24px;
+    width: 520px;
+  }
 }
