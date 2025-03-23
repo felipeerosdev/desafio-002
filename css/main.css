@@ -82,3 +82,27 @@ main section div.card p{
     font-size: 16px;
   }
 }
+@media(min-width:64rem){/*1024px*/
+  main section div.content-section h2{
+    font-size: 32px;
+    padding-top: 40px;
+    margin-bottom: 24px;
+  }
+  main section div.content-section p{
+    font-size: 24px;
+    width: 600px;
+    /* margin: 0 auto; */
+  }
+  div.cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,326px);
+    /* gap: 40px 32px; */
+    padding: 72px 0;
+  }
+  main section div.card{
+    width: 384px;
+    height: 326px;
+  }
+}
+
